@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shooping Cart |Edit page</title>
+  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/creatitem.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                 <a href="index.html" class="brand">Shooping Cart</a>            
+                 <nav>
+                    <ul id="links">
+                    <li><a href="login.html">Sign in </a></li>
+                   <li><a href="register.html">Sign up</a></li>
+                  
+  
+                   </ul>
+                   <ul id="user_info">
+                       <li><a href="profile.html" id="user"></a></li>
+                       
+                       <li class="shoopingcart">
+                          <a href="myproducts.html" class="favheart" style="width:20px;">My Product</a>
+                        <a href="favorite.html" class="favheart" style="width:20px;"><i class="fas fa-heart "></i></a>
+                      <i class="fas fa-cart-plus"></i>
+                      
+                      <span class="badge"></span>
+                      <div class="cartdetatails">
+                          <div></div>
+                          
+                         <a href="cart.html">view all items</a>
+                      </div>
+                      </li>
+                       <li><a href="#" id="logout">Logout</a></li>
+                   </ul>
+                   </nav>
+            </div>
+        </div>
+    </header>
+   <section  class="creat-item-page">
+   <div class="container">
+    <form action=""  id="update-form">
+        <h1>Create New Item</h1>
+        <input type="file" id="upload-img-file">
+        <input type="text" placeholder="Name...."  id="item-name"/>
+        <input type="text" placeholder="descraption...."  id="item-desc"/>
+        <select name="" id="item-size">
+            <option value="" hidden>Select Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <input type="submit" value="Update"  id="item-create-btn">
+    </form>
+   </div>
+   </section>
+
+    <script src="js/checkuser.js"></script>
+    
+        <script src="js/data.js"></script>
+      <script src="js/edit.js"></script>  
+      <!--<script src="js/script.js"></script> 
+    <script src="js/additemlocal.js"></script>  -->
+   
+</body>
+</html>
